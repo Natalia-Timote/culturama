@@ -1,0 +1,129 @@
+/* Cabeçalho */
+
+.banner {
+    display: grid;
+    gap: 1rem;
+}
+
+.banner img:nth-child(1) {
+    grid-column: 1 / 3;
+}
+
+.banner img:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
+
+/* Eventos */
+
+.eventos__item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto repeat(2, 1fr) auto;
+    grid-template-areas:
+        "imagem imagem"
+        "nome nome"
+        "data data"
+        "local botao"
+}
+
+.eventos__item img {
+    grid-area: imagem;
+}
+
+.eventos__item h3 {
+    grid-area: nome;
+    align-self: center;
+}
+
+.eventos__item h4 {
+    grid-area: data;
+}
+
+.eventos__item h5 {
+    grid-area: local;
+    align-self: end;
+}
+
+.eventos__item button {
+    grid-area: botao;
+}
+
+/* Agenda */
+
+.agenda__item {
+    display: grid;
+    grid-template-areas:
+        "imagem-agenda imagem-agenda"
+        "data-agenda atividade-agenda"
+        "data-agenda botao-agenda"
+}
+
+.agenda__item img {
+    grid-area: imagem-agenda;
+}
+
+.agenda__item .agenda__informacoes {
+    grid-area: data-agenda;
+}
+
+.agenda__item h6 {
+    grid-area: atividade-agenda;
+}
+
+.agenda__item button {
+    grid-area: botao-agenda;
+}
+
+@media (min-width: 720px) {
+
+/* Cabeçalho */
+    
+    .banner {
+            grid-template-columns: calc(50% - 0.75rem) auto auto;
+            column-gap: 1.5rem;
+        }
+
+        .banner img:nth-child(1) {
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+        }
+        
+        .banner img:nth-child(4) {
+            grid-column: 3 / 4;
+            grid-row: 1 / 3;
+        }
+}
+
+@media (min-width: 1440px) {
+
+/* Categorias */
+
+    .categorias {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: calc(50% - 0.75rem) auto;
+        row-gap: 1rem;
+        column-gap: 1.5rem;
+        grid-template-areas:
+        "titulo-categorias titulo-categorias"
+        "lista-categorias destaques-categorias"
+        "lista-categorias imagem-destaques"
+    } 
+
+    .categorias__titulo {
+        grid-area: titulo-categorias;
+    }
+
+    .categorias__lista {
+        grid-area: lista-categorias;
+    }
+
+    .categorias__destaques {
+        grid-area: destaques-categorias;
+    }
+
+    .categorias__imagem {
+        grid-area: imagem-destaques;
+    }
+}
