@@ -46,7 +46,7 @@ Imagem de destaque com chamada de boas-vindas.
 
 Layout dividido com categorias de um lado e os eventos em destaque do outro.
 
-![Categorias e Destaques](assets/img/layout.png)
+![Categorias e Destaques](assets/img/culturama-layout.png)
 
 **📅 Eventos**
 
