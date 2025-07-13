@@ -24,7 +24,7 @@ O foco do curso é aplicar conceitos fundamentais de **layout responsivo**, util
 
 ## 🛠️ Tecnologias Utilizadas
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" width="80" height="80"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" width="80" height="80"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" width="80" height="80"/>
 
 ## 🖼️ Visualização do Projeto
 
@@ -38,7 +38,7 @@ O projeto está disponível para visualização na **Vercel**. Clique no link ab
 
 **🎨 Banner Inicial**
 
-Imagem de destaque com chamada de boas-vindas.
+Imagem inicial do Culturama.
 
 ![Banner Inicial](assets/img/culturama-home.png)
 
